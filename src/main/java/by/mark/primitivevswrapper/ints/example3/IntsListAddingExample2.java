@@ -6,8 +6,8 @@ import java.util.stream.IntStream;
 
 import static by.mark.primitivevswrapper.MemoryUtils.MAX_POSSIBLE_INTS_ELEMENTS_TO_ALLOCATE_FOR_1GB;
 import static by.mark.primitivevswrapper.MemoryUtils.getRealSizeOfList;
-import static by.mark.primitivevswrapper.MemoryUtils.printUsefulAllocatedMemoryByInts;
 import static by.mark.primitivevswrapper.MemoryUtils.printBaseInfo;
+import static by.mark.primitivevswrapper.MemoryUtils.printUsefulAllocatedMemoryByInts;
 
 public class IntsListAddingExample2 {
 

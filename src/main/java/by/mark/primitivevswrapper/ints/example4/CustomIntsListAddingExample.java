@@ -10,16 +10,16 @@ import static by.mark.primitivevswrapper.MemoryUtils.printUsefulAllocatedMemoryB
 
 public class CustomIntsListAddingExample {
 
-    private static final int ELEMENTS = MAX_POSSIBLE_INTS_ELEMENTS_TO_ALLOCATE_FOR_1GB;
+    private static final int EXPECTED_ELEMENTS_TO_ADD = MAX_POSSIBLE_INTS_ELEMENTS_TO_ALLOCATE_FOR_1GB;
 
     public static void main(String[] args) {
         printBaseInfo();
 
-        addHookBeforeJavaDied(ELEMENTS);
+        addHookBeforeJavaDied(EXPECTED_ELEMENTS_TO_ADD);
 
-        NotPublicInnerIntList ints = new NotPublicInnerIntList(ELEMENTS);
+        NotPublicInnerIntList ints = new NotPublicInnerIntList(EXPECTED_ELEMENTS_TO_ADD);
 
-        IntStream.range(0, ELEMENTS)
+        IntStream.range(0, EXPECTED_ELEMENTS_TO_ADD)
                 .forEach(i -> {
                     ints.add(i);
                     incrementIteration();

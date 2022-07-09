@@ -22,6 +22,7 @@ public final class MemoryUtils {
     private static final AtomicInteger COUNTER = new AtomicInteger();
 
     public static void printBaseInfo() {
+        System.out.println(lineSeparator() + lineSeparator() + lineSeparator() + lineSeparator() + "--------------------------");
         System.out.println("To allocate: ~" + MAX_POSSIBLE_MEMORY_TO_ALLOCATE_FROM_1_GB / ONE_MB + " MB" + lineSeparator());
         int javaConsumesThatAmountOfBytes = ONE_GB - (int) (ONE_GB * FREE_MEMORY_TO_ALLOCATE_PART);
         System.out.println("Java inner kitchen consumes: ~" + javaConsumesThatAmountOfBytes / ONE_MB + " MB" + lineSeparator());

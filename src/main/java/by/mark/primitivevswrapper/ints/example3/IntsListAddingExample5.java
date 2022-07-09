@@ -14,15 +14,15 @@ import static by.mark.primitivevswrapper.MemoryUtils.printUsefulAllocatedMemoryB
 @SuppressWarnings("DuplicatedCode")
 public class IntsListAddingExample5 {
 
-    private static final int ELEMENTS = MAX_POSSIBLE_INTS_ELEMENTS_TO_ALLOCATE_FOR_1GB / 5;
+    private static final int EXPECTED_ELEMENTS_TO_ADD = MAX_POSSIBLE_INTS_ELEMENTS_TO_ALLOCATE_FOR_1GB / 5;
 
     public static void main(String[] args) {
         printBaseInfo();
-        addHookBeforeJavaDied(ELEMENTS);
+        addHookBeforeJavaDied(EXPECTED_ELEMENTS_TO_ADD);
 
-        List<Integer> ints = new ArrayList<>(ELEMENTS);
+        List<Integer> ints = new ArrayList<>(EXPECTED_ELEMENTS_TO_ADD);
 
-        IntStream.range(0, ELEMENTS)
+        IntStream.range(0, EXPECTED_ELEMENTS_TO_ADD)
                 .forEach(i -> {
                     ints.add(i);
                     incrementIteration();
