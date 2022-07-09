@@ -1,0 +1,40 @@
+plugins {
+  id 'java'
+  id 'me.champeau.jmh' version '0.6.6'
+}
+
+group = 'by.mark'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+  mavenCentral()
+}
+
+ext {
+  jhmVersion = '1.35'
+}
+
+dependencies {
+  jmh "org.openjdk.jmh:jmh-core:$jhmVersion"
+  jmh "org.openjdk.jmh:jmh-generator-annprocess:$jhmVersion"
+
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+jmh {
+  iterations = 10
+  warmupIterations = 10
+  humanOutputFile = project.file("${project.buildDir}/results/jmh/human.txt") // human-readable output file
+  resultsFile = project.file("${project.buildDir}/results/jmh/results.txt") // results file
+  profilers = ['org.openjdk.jmh.profile.GCProfiler']
+}
+
+tasks.named('test') {
+  useJUnitPlatform()
+}
+
+tasks.withType(JavaExec) {
+  enableAssertions = true
+  jvmArgs = ['-Xmx1g', '--add-opens', 'java.base/java.util=ALL-UNNAMED']
+}
