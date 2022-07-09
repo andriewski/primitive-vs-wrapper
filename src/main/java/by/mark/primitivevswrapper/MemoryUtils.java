@@ -9,7 +9,7 @@ import static java.lang.Runtime.getRuntime;
 import static java.lang.String.format;
 import static java.lang.System.lineSeparator;
 
-public abstract class MemoryUtils {
+public final class MemoryUtils {
 
     public static final int ONE_MB = 1024 * 1024;
     public static final int ONE_GB = ONE_MB * 1024;
