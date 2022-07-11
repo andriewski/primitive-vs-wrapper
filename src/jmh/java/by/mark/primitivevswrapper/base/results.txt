@@ -1,0 +1,91 @@
+Benchmark                                                                                          Mode  Cnt           Score         Error   Units
+BaseOperationsBenchmark.___divideIntegersExceededByteCache___                                     thrpt   35    28527851.438 ±  257702.345   ops/s
+BaseOperationsBenchmark.___divideIntegersExceededByteCache___:·gc.alloc.rate                      thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___divideIntegersExceededByteCache___:·gc.alloc.rate.norm                 thrpt   35          ≈ 10⁻⁶                  B/op
+BaseOperationsBenchmark.___divideIntegersExceededByteCache___:·gc.count                           thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___divideIntegersWithinByteCache___                                       thrpt   35    28917438.981 ±   84505.749   ops/s
+BaseOperationsBenchmark.___divideIntegersWithinByteCache___:·gc.alloc.rate                        thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___divideIntegersWithinByteCache___:·gc.alloc.rate.norm                   thrpt   35          ≈ 10⁻⁶                  B/op
+BaseOperationsBenchmark.___divideIntegersWithinByteCache___:·gc.count                             thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___dividePrimitiveIntsExceededByteCache___                                thrpt   35   282466454.401 ±  935019.027   ops/s
+BaseOperationsBenchmark.___dividePrimitiveIntsExceededByteCache___:·gc.alloc.rate                 thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___dividePrimitiveIntsExceededByteCache___:·gc.alloc.rate.norm            thrpt   35          ≈ 10⁻⁷                  B/op
+BaseOperationsBenchmark.___dividePrimitiveIntsExceededByteCache___:·gc.count                      thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___dividePrimitiveIntsWithinByteCache___                                  thrpt   35   283047378.004 ±  797832.053   ops/s
+BaseOperationsBenchmark.___dividePrimitiveIntsWithinByteCache___:·gc.alloc.rate                   thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___dividePrimitiveIntsWithinByteCache___:·gc.alloc.rate.norm              thrpt   35          ≈ 10⁻⁷                  B/op
+BaseOperationsBenchmark.___dividePrimitiveIntsWithinByteCache___:·gc.count                        thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___equalsIntegersExceededByteCache___                                     thrpt   35   156228988.443 ±  685689.157   ops/s
+BaseOperationsBenchmark.___equalsIntegersExceededByteCache___:·gc.alloc.rate                      thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___equalsIntegersExceededByteCache___:·gc.alloc.rate.norm                 thrpt   35          ≈ 10⁻⁷                  B/op
+BaseOperationsBenchmark.___equalsIntegersExceededByteCache___:·gc.count                           thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___equalsIntegersWithinByteCache___                                       thrpt   35   155874171.065 ±  655621.373   ops/s
+BaseOperationsBenchmark.___equalsIntegersWithinByteCache___:·gc.alloc.rate                        thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___equalsIntegersWithinByteCache___:·gc.alloc.rate.norm                   thrpt   35          ≈ 10⁻⁷                  B/op
+BaseOperationsBenchmark.___equalsIntegersWithinByteCache___:·gc.count                             thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___equalsPrimitiveIntsExceededByteCache___                                thrpt   35   524980652.651 ± 1437529.186   ops/s
+BaseOperationsBenchmark.___equalsPrimitiveIntsExceededByteCache___:·gc.alloc.rate                 thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___equalsPrimitiveIntsExceededByteCache___:·gc.alloc.rate.norm            thrpt   35          ≈ 10⁻⁷                  B/op
+BaseOperationsBenchmark.___equalsPrimitiveIntsExceededByteCache___:·gc.count                      thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___equalsPrimitiveIntsWithinByteCache___                                  thrpt   35   525308895.081 ± 1446156.168   ops/s
+BaseOperationsBenchmark.___equalsPrimitiveIntsWithinByteCache___:·gc.alloc.rate                   thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___equalsPrimitiveIntsWithinByteCache___:·gc.alloc.rate.norm              thrpt   35          ≈ 10⁻⁷                  B/op
+BaseOperationsBenchmark.___equalsPrimitiveIntsWithinByteCache___:·gc.count                        thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___minusIntegersExceededByteCache___                                      thrpt   35    78286765.862 ±  349041.622   ops/s
+BaseOperationsBenchmark.___minusIntegersExceededByteCache___:·gc.alloc.rate                       thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___minusIntegersExceededByteCache___:·gc.alloc.rate.norm                  thrpt   35          ≈ 10⁻⁶                  B/op
+BaseOperationsBenchmark.___minusIntegersExceededByteCache___:·gc.count                            thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___minusIntegersWithinByteCache___                                        thrpt   35    78288969.136 ±  219735.288   ops/s
+BaseOperationsBenchmark.___minusIntegersWithinByteCache___:·gc.alloc.rate                         thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___minusIntegersWithinByteCache___:·gc.alloc.rate.norm                    thrpt   35          ≈ 10⁻⁶                  B/op
+BaseOperationsBenchmark.___minusIntegersWithinByteCache___:·gc.count                              thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___minusPrimitiveIntsExceededByteCache___                                 thrpt   35  1469250750.576 ± 5897930.051   ops/s
+BaseOperationsBenchmark.___minusPrimitiveIntsExceededByteCache___:·gc.alloc.rate                  thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___minusPrimitiveIntsExceededByteCache___:·gc.alloc.rate.norm             thrpt   35          ≈ 10⁻⁸                  B/op
+BaseOperationsBenchmark.___minusPrimitiveIntsExceededByteCache___:·gc.count                       thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___minusPrimitiveIntsWithinByteCache___                                   thrpt   35  1469483726.482 ± 6643381.991   ops/s
+BaseOperationsBenchmark.___minusPrimitiveIntsWithinByteCache___:·gc.alloc.rate                    thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___minusPrimitiveIntsWithinByteCache___:·gc.alloc.rate.norm               thrpt   35          ≈ 10⁻⁸                  B/op
+BaseOperationsBenchmark.___minusPrimitiveIntsWithinByteCache___:·gc.count                         thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___multiplyIntegersExceededByteCache___                                   thrpt   35    45452732.702 ±  633656.310   ops/s
+BaseOperationsBenchmark.___multiplyIntegersExceededByteCache___:·gc.alloc.rate                    thrpt   35        6600.686 ±      92.059  MB/sec
+BaseOperationsBenchmark.___multiplyIntegersExceededByteCache___:·gc.alloc.rate.norm               thrpt   35         160.009 ±       0.001    B/op
+BaseOperationsBenchmark.___multiplyIntegersExceededByteCache___:·gc.churn.G1_Eden_Space           thrpt   35        6607.207 ±      92.734  MB/sec
+BaseOperationsBenchmark.___multiplyIntegersExceededByteCache___:·gc.churn.G1_Eden_Space.norm      thrpt   35         160.167 ±       0.232    B/op
+BaseOperationsBenchmark.___multiplyIntegersExceededByteCache___:·gc.churn.G1_Survivor_Space       thrpt   35           0.003 ±       0.001  MB/sec
+BaseOperationsBenchmark.___multiplyIntegersExceededByteCache___:·gc.churn.G1_Survivor_Space.norm  thrpt   35          ≈ 10⁻⁴                  B/op
+BaseOperationsBenchmark.___multiplyIntegersExceededByteCache___:·gc.count                         thrpt   35        6343.000                counts
+BaseOperationsBenchmark.___multiplyIntegersExceededByteCache___:·gc.time                          thrpt   35        6794.000                    ms
+BaseOperationsBenchmark.___multiplyIntegersWithinByteCache___                                     thrpt   35    72215654.619 ±  232216.920   ops/s
+BaseOperationsBenchmark.___multiplyIntegersWithinByteCache___:·gc.alloc.rate                      thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___multiplyIntegersWithinByteCache___:·gc.alloc.rate.norm                 thrpt   35          ≈ 10⁻⁶                  B/op
+BaseOperationsBenchmark.___multiplyIntegersWithinByteCache___:·gc.count                           thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___multiplyPrimitiveIntsExceededByteCache___                              thrpt   35  1841193692.495 ± 6740811.669   ops/s
+BaseOperationsBenchmark.___multiplyPrimitiveIntsExceededByteCache___:·gc.alloc.rate               thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___multiplyPrimitiveIntsExceededByteCache___:·gc.alloc.rate.norm          thrpt   35          ≈ 10⁻⁸                  B/op
+BaseOperationsBenchmark.___multiplyPrimitiveIntsExceededByteCache___:·gc.count                    thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___multiplyPrimitiveIntsWithinByteCache___                                thrpt   35  1839189221.010 ± 8645730.443   ops/s
+BaseOperationsBenchmark.___multiplyPrimitiveIntsWithinByteCache___:·gc.alloc.rate                 thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___multiplyPrimitiveIntsWithinByteCache___:·gc.alloc.rate.norm            thrpt   35          ≈ 10⁻⁸                  B/op
+BaseOperationsBenchmark.___multiplyPrimitiveIntsWithinByteCache___:·gc.count                      thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___sumIntegersExceededByteCache___                                        thrpt   35    45473389.768 ±  175612.890   ops/s
+BaseOperationsBenchmark.___sumIntegersExceededByteCache___:·gc.alloc.rate                         thrpt   35        6603.586 ±      25.373  MB/sec
+BaseOperationsBenchmark.___sumIntegersExceededByteCache___:·gc.alloc.rate.norm                    thrpt   35         160.009 ±       0.001    B/op
+BaseOperationsBenchmark.___sumIntegersExceededByteCache___:·gc.churn.G1_Eden_Space                thrpt   35        6608.216 ±      25.433  MB/sec
+BaseOperationsBenchmark.___sumIntegersExceededByteCache___:·gc.churn.G1_Eden_Space.norm           thrpt   35         160.122 ±       0.240    B/op
+BaseOperationsBenchmark.___sumIntegersExceededByteCache___:·gc.churn.G1_Survivor_Space            thrpt   35           0.003 ±       0.001  MB/sec
+BaseOperationsBenchmark.___sumIntegersExceededByteCache___:·gc.churn.G1_Survivor_Space.norm       thrpt   35          ≈ 10⁻⁴                  B/op
+BaseOperationsBenchmark.___sumIntegersExceededByteCache___:·gc.count                              thrpt   35        6233.000                counts
+BaseOperationsBenchmark.___sumIntegersExceededByteCache___:·gc.time                               thrpt   35        6652.000                    ms
+BaseOperationsBenchmark.___sumIntegersWithinByteCache___                                          thrpt   35    72144961.442 ±  229965.988   ops/s
+BaseOperationsBenchmark.___sumIntegersWithinByteCache___:·gc.alloc.rate                           thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___sumIntegersWithinByteCache___:·gc.alloc.rate.norm                      thrpt   35          ≈ 10⁻⁶                  B/op
+BaseOperationsBenchmark.___sumIntegersWithinByteCache___:·gc.count                                thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___sumPrimitiveIntsExceededByteCache___                                   thrpt   35  1840008595.889 ± 4860100.978   ops/s
+BaseOperationsBenchmark.___sumPrimitiveIntsExceededByteCache___:·gc.alloc.rate                    thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___sumPrimitiveIntsExceededByteCache___:·gc.alloc.rate.norm               thrpt   35          ≈ 10⁻⁸                  B/op
+BaseOperationsBenchmark.___sumPrimitiveIntsExceededByteCache___:·gc.count                         thrpt   35             ≈ 0                counts
+BaseOperationsBenchmark.___sumPrimitiveIntsWithinByteCache___                                     thrpt   35  1840000787.980 ± 4643382.766   ops/s
+BaseOperationsBenchmark.___sumPrimitiveIntsWithinByteCache___:·gc.alloc.rate                      thrpt   35          ≈ 10⁻⁴                MB/sec
+BaseOperationsBenchmark.___sumPrimitiveIntsWithinByteCache___:·gc.alloc.rate.norm                 thrpt   35          ≈ 10⁻⁸                  B/op
+BaseOperationsBenchmark.___sumPrimitiveIntsWithinByteCache___:·gc.count                           thrpt   35             ≈ 0                counts

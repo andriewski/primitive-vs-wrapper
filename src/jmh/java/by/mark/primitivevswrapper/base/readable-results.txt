@@ -1,0 +1,21 @@
+Benchmark                                   Mode  Cnt           Score         Error   Units
+divideIntegersExceededByteCache            thrpt   35    28527851.438 ±  257702.345   ops/s
+divideIntegersWithinByteCache              thrpt   35    28917438.981 ±   84505.749   ops/s
+dividePrimitiveIntsExceededByteCache       thrpt   35   282466454.401 ±  935019.027   ops/s
+dividePrimitiveIntsWithinByteCache         thrpt   35   283047378.004 ±  797832.053   ops/s
+equalsIntegersExceededByteCache            thrpt   35   156228988.443 ±  685689.157   ops/s
+equalsIntegersWithinByteCache              thrpt   35   155874171.065 ±  655621.373   ops/s
+equalsPrimitiveIntsExceededByteCache       thrpt   35   524980652.651 ± 1437529.186   ops/s
+equalsPrimitiveIntsWithinByteCache         thrpt   35   525308895.081 ± 1446156.168   ops/s
+minusIntegersExceededByteCache             thrpt   35    78286765.862 ±  349041.622   ops/s
+minusIntegersWithinByteCache               thrpt   35    78288969.136 ±  219735.288   ops/s
+minusPrimitiveIntsExceededByteCache        thrpt   35  1469250750.576 ± 5897930.051   ops/s
+minusPrimitiveIntsWithinByteCache          thrpt   35  1469483726.482 ± 6643381.991   ops/s
+multiplyIntegersExceededByteCache          thrpt   35    45452732.702 ±  633656.310   ops/s
+multiplyIntegersWithinByteCache            thrpt   35    72215654.619 ±  232216.920   ops/s
+multiplyPrimitiveIntsExceededByteCache     thrpt   35  1841193692.495 ± 6740811.669   ops/s
+multiplyPrimitiveIntsWithinByteCache       thrpt   35  1839189221.010 ± 8645730.443   ops/s
+sumIntegersExceededByteCache               thrpt   35    45473389.768 ±  175612.890   ops/s
+sumIntegersWithinByteCache                 thrpt   35    72144961.442 ±  229965.988   ops/s
+sumPrimitiveIntsExceededByteCache          thrpt   35  1840008595.889 ± 4860100.978   ops/s
+sumPrimitiveIntsWithinByteCache            thrpt   35  1840000787.980 ± 4643382.766   ops/s

@@ -13,18 +13,20 @@ repositories {
 
 ext {
   jhmVersion = '1.35'
+  jacksonVersion = '2.13.3'
 }
 
 dependencies {
   jmh "org.openjdk.jmh:jmh-core:$jhmVersion"
   jmh "org.openjdk.jmh:jmh-generator-annprocess:$jhmVersion"
 
-  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  jmh "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+  jmh "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
 }
 
 jmh {
-  iterations = 10
-  warmupIterations = 10
+  iterations = 7
+  warmupIterations = 5
   humanOutputFile = project.file("${project.buildDir}/results/jmh/human.txt") // human-readable output file
   resultsFile = project.file("${project.buildDir}/results/jmh/results.txt") // results file
   profilers = ['org.openjdk.jmh.profile.GCProfiler']

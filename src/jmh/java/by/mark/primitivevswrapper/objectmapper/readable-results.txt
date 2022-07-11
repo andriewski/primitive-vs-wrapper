@@ -1,0 +1,11 @@
+Deserialize
+ObjectWithALotOfPrimitivesExceededByteCache    thrpt   35       79991.327 ±     986.951   ops/s
+ObjectWithALotOfPrimitivesWithinByteCache      thrpt   35       84892.535 ±     839.798   ops/s
+ObjectWithALotOfWrappersExceededByteCache      thrpt   35      124900.106 ±     481.991   ops/s
+ObjectWithALotOfWrappersWithinByteCache        thrpt   35      131197.270 ±     769.373   ops/s
+
+Serialize
+ObjectWithALotOfPrimitivesExceededByteCache    thrpt   35      183854.498 ±    2661.028   ops/s
+ObjectWithALotOfPrimitivesWithinByteCache      thrpt   35      211049.966 ±    4318.784   ops/s
+ObjectWithALotOfWrappersExceededByteCache      thrpt   35      193914.475 ±    1852.742   ops/s
+ObjectWithALotOfWrappersWithinByteCache        thrpt   35      214693.668 ±    4963.489   ops/s
