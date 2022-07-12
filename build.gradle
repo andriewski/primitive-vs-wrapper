@@ -22,6 +22,8 @@ dependencies {
 
   jmh "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
   jmh "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+  jmh "com.fasterxml.jackson.module:jackson-module-blackbird:$jacksonVersion"
+  jmh "com.fasterxml.jackson.module:jackson-module-afterburner:$jacksonVersion"
 }
 
 jmh {

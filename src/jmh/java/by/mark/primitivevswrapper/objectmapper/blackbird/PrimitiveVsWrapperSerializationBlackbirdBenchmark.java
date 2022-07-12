@@ -1,17 +1,17 @@
-package by.mark.primitivevswrapper.objectmapper;
+package by.mark.primitivevswrapper.objectmapper.blackbird;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Mode;
 
-import static by.mark.primitivevswrapper.objectmapper.BenchmarkUtils.LOTS_OF_PRIMITIVES_EXCEEDED_BYTE_CACHE;
-import static by.mark.primitivevswrapper.objectmapper.BenchmarkUtils.LOTS_OF_PRIMITIVES_WITHIN_BYTE_CACHE;
-import static by.mark.primitivevswrapper.objectmapper.BenchmarkUtils.LOTS_OF_WRAPPERS_EXCEEDED_BYTE_CACHE;
-import static by.mark.primitivevswrapper.objectmapper.BenchmarkUtils.LOTS_OF_WRAPPERS_WITHIN_BYTE_CACHE;
-import static by.mark.primitivevswrapper.objectmapper.BenchmarkUtils.writeValue;
+import static by.mark.primitivevswrapper.objectmapper.CommonFilesUtils.LOTS_OF_PRIMITIVES_EXCEEDED_BYTE_CACHE;
+import static by.mark.primitivevswrapper.objectmapper.CommonFilesUtils.LOTS_OF_PRIMITIVES_WITHIN_BYTE_CACHE;
+import static by.mark.primitivevswrapper.objectmapper.CommonFilesUtils.LOTS_OF_WRAPPERS_EXCEEDED_BYTE_CACHE;
+import static by.mark.primitivevswrapper.objectmapper.CommonFilesUtils.LOTS_OF_WRAPPERS_WITHIN_BYTE_CACHE;
+import static by.mark.primitivevswrapper.objectmapper.blackbird.BlackbirdBenchmarkUtils.writeValue;
 
 @SuppressWarnings("unused")
-public class PrimitiveVsWrapperSerializationBenchmark {
+public class PrimitiveVsWrapperSerializationBlackbirdBenchmark {
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
