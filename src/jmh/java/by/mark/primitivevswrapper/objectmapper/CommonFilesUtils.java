@@ -26,8 +26,6 @@ public class CommonFilesUtils {
     public static final LotsOPrimitives LOTS_OF_PRIMITIVES_EXCEEDED_BYTE_CACHE =
             readValue(VALUES_EXCEEDED_BYTE_CACHE_JSON, LotsOPrimitives.class);
 
-    private static final ObjectMapper MAPPER = new ObjectMapper();
-
     private static String readJson(String fileName) {
         ClassLoader classLoader = PrimitiveVsWrapperDeserializationBlackbirdBenchmark.class.getClassLoader();
 
@@ -40,7 +38,7 @@ public class CommonFilesUtils {
 
     private static <T> T readValue(String json, Class<T> clazz) {
         try {
-            return MAPPER.readValue(json, clazz);
+            return new ObjectMapper().readValue(json, clazz);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
