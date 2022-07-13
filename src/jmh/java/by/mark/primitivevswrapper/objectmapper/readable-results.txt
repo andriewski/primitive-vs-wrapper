@@ -1,52 +1,66 @@
-Benchmark
+# Benchmark
+# JMH version: 1.35
+# VM version: JDK 17.0.3, OpenJDK 64-Bit Server VM, 17.0.3+6-LTS
+# VM invoker: C:\Users\windmill\.jdks\corretto-17.0.3\bin\java.exe
+# VM options: -Dfile.encoding=windows-1251 -Djava.io.tmpdir=D:\git\own\primitive-vs-wrapper\build\tmp\jmh -Duser.country=GB -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
 
+-----------------------------
 deserialize using constructor
 
-afterbirner.PrimitiveVsWrapperDeserializationAfterburnerBenchmarkByConstructor.deserializeObjectWithALotOfPrimitivesExceededByteCache  thrpt   50   81640.639 ±  773.521   ops/s
-afterbirner.PrimitiveVsWrapperDeserializationAfterburnerBenchmarkByConstructor.deserializeObjectWithALotOfPrimitivesWithinByteCache    thrpt   50   85555.392 ±  436.549   ops/s
-afterbirner.PrimitiveVsWrapperDeserializationAfterburnerBenchmarkByConstructor.deserializeObjectWithALotOfWrappersExceededByteCache    thrpt   50  128431.137 ±  928.981   ops/s
-afterbirner.PrimitiveVsWrapperDeserializationAfterburnerBenchmarkByConstructor.deserializeObjectWithALotOfWrappersWithinByteCache      thrpt   50  132461.997 ± 1138.352   ops/s
+afterbirner.deserializeObjectWithALotOfPrimitivesExceededByteCache  thrpt   50   81640.639 ±  773.521   ops/s
+afterbirner.deserializeObjectWithALotOfPrimitivesWithinByteCache    thrpt   50   85555.392 ±  436.549   ops/s
+afterbirner.deserializeObjectWithALotOfWrappersExceededByteCache    thrpt   50  128431.137 ±  928.981   ops/s
+afterbirner.deserializeObjectWithALotOfWrappersWithinByteCache      thrpt   50  132461.997 ± 1138.352   ops/s
 
-blackbird.PrimitiveVsWrapperDeserializationBlackbirdBenchmarkByConstructor.deserializeObjectWithALotOfPrimitivesExceededByteCache      thrpt   50  126025.889 ± 1097.347   ops/s
-blackbird.PrimitiveVsWrapperDeserializationBlackbirdBenchmarkByConstructor.deserializeObjectWithALotOfPrimitivesWithinByteCache        thrpt   50  134763.383 ±  582.898   ops/s
-blackbird.PrimitiveVsWrapperDeserializationBlackbirdBenchmarkByConstructor.deserializeObjectWithALotOfWrappersExceededByteCache        thrpt   50  123840.477 ± 1018.570   ops/s
-blackbird.PrimitiveVsWrapperDeserializationBlackbirdBenchmarkByConstructor.deserializeObjectWithALotOfWrappersWithinByteCache          thrpt   50  130179.295 ± 1282.986   ops/s
+blackbird.deserializeObjectWithALotOfPrimitivesExceededByteCache    thrpt   50  126025.889 ± 1097.347   ops/s
+blackbird.deserializeObjectWithALotOfPrimitivesWithinByteCache      thrpt   50  134763.383 ±  582.898   ops/s
+blackbird.deserializeObjectWithALotOfWrappersExceededByteCache      thrpt   50  123840.477 ± 1018.570   ops/s
+blackbird.deserializeObjectWithALotOfWrappersWithinByteCache        thrpt   50  130179.295 ± 1282.986   ops/s
 
-vanilla.PrimitiveVsWrapperDeserializationVanillaBenchmarkByConstructor.deserializeObjectWithALotOfPrimitivesExceededByteCache          thrpt   50   81258.988 ±  827.692   ops/s
-vanilla.PrimitiveVsWrapperDeserializationVanillaBenchmarkByConstructor.deserializeObjectWithALotOfPrimitivesWithinByteCache            thrpt   50   84399.022 ±  291.501   ops/s
-vanilla.PrimitiveVsWrapperDeserializationVanillaBenchmarkByConstructor.deserializeObjectWithALotOfWrappersExceededByteCache            thrpt   50  129637.185 ± 1647.939   ops/s
-vanilla.PrimitiveVsWrapperDeserializationVanillaBenchmarkByConstructor.deserializeObjectWithALotOfWrappersWithinByteCache              thrpt   50  133050.295 ± 1640.740   ops/s
+vanilla.deserializeObjectWithALotOfPrimitivesExceededByteCache      thrpt   50   81258.988 ±  827.692   ops/s
+vanilla.deserializeObjectWithALotOfPrimitivesWithinByteCache        thrpt   50   84399.022 ±  291.501   ops/s
+vanilla.deserializeObjectWithALotOfWrappersExceededByteCache        thrpt   50  129637.185 ± 1647.939   ops/s
+vanilla.deserializeObjectWithALotOfWrappersWithinByteCache          thrpt   50  133050.295 ± 1640.740   ops/s
 
+-----------------------------
 deserialize using setters
 
-afterbirner.PrimitiveVsWrapperDeserializationAfterburnerBenchmarkBySetters.deserializeObjectWithALotOfPrimitivesExceededByteCache      thrpt   50  203490.238 ± 2798.402   ops/s
-afterbirner.PrimitiveVsWrapperDeserializationAfterburnerBenchmarkBySetters.deserializeObjectWithALotOfPrimitivesWithinByteCache        thrpt   50  226138.299 ± 2402.633   ops/s
-afterbirner.PrimitiveVsWrapperDeserializationAfterburnerBenchmarkBySetters.deserializeObjectWithALotOfWrappersExceededByteCache        thrpt   50  188753.597 ±  659.647   ops/s
-afterbirner.PrimitiveVsWrapperDeserializationAfterburnerBenchmarkBySetters.deserializeObjectWithALotOfWrappersWithinByteCache          thrpt   50  206448.245 ± 1423.374   ops/s
+afterbirner.deserializeObjectWithALotOfPrimitivesExceededByteCache  thrpt   50  203490.238 ± 2798.402   ops/s
+afterbirner.deserializeObjectWithALotOfPrimitivesWithinByteCache    thrpt   50  226138.299 ± 2402.633   ops/s
+afterbirner.deserializeObjectWithALotOfWrappersExceededByteCache    thrpt   50  188753.597 ±  659.647   ops/s
+afterbirner.deserializeObjectWithALotOfWrappersWithinByteCache      thrpt   50  206448.245 ± 1423.374   ops/s
 
-blackbird.PrimitiveVsWrapperDeserializationBlackbirdBenchmarkBySetters.deserializeObjectWithALotOfPrimitivesExceededByteCache          thrpt   50  156128.816 ± 1295.208   ops/s
-blackbird.PrimitiveVsWrapperDeserializationBlackbirdBenchmarkBySetters.deserializeObjectWithALotOfPrimitivesWithinByteCache            thrpt   50  168735.433 ± 1699.003   ops/s
-blackbird.PrimitiveVsWrapperDeserializationBlackbirdBenchmarkBySetters.deserializeObjectWithALotOfWrappersExceededByteCache            thrpt   50  156459.879 ± 1757.727   ops/s
-blackbird.PrimitiveVsWrapperDeserializationBlackbirdBenchmarkBySetters.deserializeObjectWithALotOfWrappersWithinByteCache              thrpt   50  166642.487 ± 1679.994   ops/s
+blackbird.deserializeObjectWithALotOfPrimitivesExceededByteCache    thrpt   50  156128.816 ± 1295.208   ops/s
+blackbird.deserializeObjectWithALotOfPrimitivesWithinByteCache      thrpt   50  168735.433 ± 1699.003   ops/s
+blackbird.deserializeObjectWithALotOfWrappersExceededByteCache      thrpt   50  156459.879 ± 1757.727   ops/s
+blackbird.deserializeObjectWithALotOfWrappersWithinByteCache        thrpt   50  166642.487 ± 1679.994   ops/s
 
-vanilla.PrimitiveVsWrapperDeserializationVanillaBenchmarkBySetters.deserializeObjectWithALotOfPrimitivesExceededByteCache              thrpt   50   83447.754 ±  947.815   ops/s
-vanilla.PrimitiveVsWrapperDeserializationVanillaBenchmarkBySetters.deserializeObjectWithALotOfPrimitivesWithinByteCache                thrpt   50   91708.544 ± 1019.130   ops/s
-vanilla.PrimitiveVsWrapperDeserializationVanillaBenchmarkBySetters.deserializeObjectWithALotOfWrappersExceededByteCache                thrpt   50   83004.602 ±  928.473   ops/s
-vanilla.PrimitiveVsWrapperDeserializationVanillaBenchmarkBySetters.deserializeObjectWithALotOfWrappersWithinByteCache                  thrpt   50   91662.166 ±  854.692   ops/s
+vanilla.deserializeObjectWithALotOfPrimitivesExceededByteCache      thrpt   50   83447.754 ±  947.815   ops/s
+vanilla.deserializeObjectWithALotOfPrimitivesWithinByteCache        thrpt   50   91708.544 ± 1019.130   ops/s
+vanilla.deserializeObjectWithALotOfWrappersExceededByteCache        thrpt   50   83004.602 ±  928.473   ops/s
+vanilla.deserializeObjectWithALotOfWrappersWithinByteCache          thrpt   50   91662.166 ±  854.692   ops/s
 
+
+-----------------------------
 serialize
 
-afterbirner.PrimitiveVsWrapperSerializationAfterburnerBenchmark.serializeObjectWithALotOfPrimitivesExceededByteCache                   thrpt   50  325375.230 ± 5065.042   ops/s
-afterbirner.PrimitiveVsWrapperSerializationAfterburnerBenchmark.serializeObjectWithALotOfPrimitivesWithinByteCache                     thrpt   50  372340.380 ± 8338.254   ops/s
-afterbirner.PrimitiveVsWrapperSerializationAfterburnerBenchmark.serializeObjectWithALotOfWrappersExceededByteCache                     thrpt   50  310472.821 ± 2997.814   ops/s
-afterbirner.PrimitiveVsWrapperSerializationAfterburnerBenchmark.serializeObjectWithALotOfWrappersWithinByteCache                       thrpt   50  352965.759 ± 4296.584   ops/s
+afterbirner.serializeObjectWithALotOfPrimitivesExceededByteCache    thrpt   50  325375.230 ± 5065.042   ops/s
+afterbirner.serializeObjectWithALotOfPrimitivesWithinByteCache      thrpt   50  372340.380 ± 8338.254   ops/s
+afterbirner.serializeObjectWithALotOfWrappersExceededByteCache      thrpt   50  310472.821 ± 2997.814   ops/s
+afterbirner.serializeObjectWithALotOfWrappersWithinByteCache        thrpt   50  352965.759 ± 4296.584   ops/s
 
-blackbird.PrimitiveVsWrapperSerializationBlackbirdBenchmark.serializeObjectWithALotOfPrimitivesExceededByteCache                       thrpt   50  251730.282 ± 4628.612   ops/s
-blackbird.PrimitiveVsWrapperSerializationBlackbirdBenchmark.serializeObjectWithALotOfPrimitivesWithinByteCache                         thrpt   50  296152.628 ± 7248.472   ops/s
-blackbird.PrimitiveVsWrapperSerializationBlackbirdBenchmark.serializeObjectWithALotOfWrappersExceededByteCache                         thrpt   50  237169.427 ± 4177.438   ops/s
-blackbird.PrimitiveVsWrapperSerializationBlackbirdBenchmark.serializeObjectWithALotOfWrappersWithinByteCache                           thrpt   50  270338.766 ± 6136.820   ops/s
+blackbird.serializeObjectWithALotOfPrimitivesExceededByteCache      thrpt   50  251730.282 ± 4628.612   ops/s
+blackbird.serializeObjectWithALotOfPrimitivesWithinByteCache        thrpt   50  296152.628 ± 7248.472   ops/s
+blackbird.serializeObjectWithALotOfWrappersExceededByteCache        thrpt   50  237169.427 ± 4177.438   ops/s
+blackbird.serializeObjectWithALotOfWrappersWithinByteCache          thrpt   50  270338.766 ± 6136.820   ops/s
 
-vanilla.PrimitiveVsWrapperSerializationVanillaBenchmark.serializeObjectWithALotOfPrimitivesExceededByteCache                           thrpt   50  186049.641 ± 3160.427   ops/s
-vanilla.PrimitiveVsWrapperSerializationVanillaBenchmark.serializeObjectWithALotOfPrimitivesWithinByteCache                             thrpt   50  210561.751 ± 3595.253   ops/s
-vanilla.PrimitiveVsWrapperSerializationVanillaBenchmark.serializeObjectWithALotOfWrappersExceededByteCache                             thrpt   50  193095.202 ± 4405.213   ops/s
-vanilla.PrimitiveVsWrapperSerializationVanillaBenchmark.serializeObjectWithALotOfWrappersWithinByteCache                               thrpt   50  215780.598 ± 5129.804   ops/s
+vanilla.serializeObjectWithALotOfPrimitivesExceededByteCache        thrpt   50  186049.641 ± 3160.427   ops/s
+vanilla.serializeObjectWithALotOfPrimitivesWithinByteCache          thrpt   50  210561.751 ± 3595.253   ops/s
+vanilla.serializeObjectWithALotOfWrappersExceededByteCache          thrpt   50  193095.202 ± 4405.213   ops/s
+vanilla.serializeObjectWithALotOfWrappersWithinByteCache            thrpt   50  215780.598 ± 5129.804   ops/s
