@@ -1,7 +1,7 @@
 package by.mark.primitivevswrapper.objectmapper;
 
 @SuppressWarnings("unused")
-public final class LotsOfWrappers {
+public final class LotsOfWrappersByConstructor {
 
     private final Integer i1;
     private final Integer i2;
@@ -109,7 +109,7 @@ public final class LotsOfWrappers {
             "i34", "i35", "i36", "i37", "i38", "i39", "i40", "i41", "i42", "i43", "i44", "i45", "i46", "i47", "i48", "i49", "i50", "i51",
             "i52", "i53", "i54", "i55", "i56", "i57", "i58", "i59", "i60", "i61", "i62", "i63", "i64", "i65", "i66", "i67", "i68", "i69",
             "i70", "i71", "i72", "i73", "i74", "i75", "i76", "i77", "i78", "i79", "i80", "i81", "i82", "i83", "i84", "i85", "i86", "i87",
-            "i88", "i89", "i90", "i91", "i92", "i93", "i94", "i95", "i96", "i97", "i98", "i99", "i100"}) public LotsOfWrappers(
+            "i88", "i89", "i90", "i91", "i92", "i93", "i94", "i95", "i96", "i97", "i98", "i99", "i100"}) public LotsOfWrappersByConstructor(
             Integer i1,
             Integer i2,
             Integer i3,
