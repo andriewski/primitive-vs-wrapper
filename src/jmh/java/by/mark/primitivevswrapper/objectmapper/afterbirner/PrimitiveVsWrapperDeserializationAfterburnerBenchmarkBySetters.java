@@ -11,7 +11,7 @@ import static by.mark.primitivevswrapper.objectmapper.CommonFilesUtils.VALUES_WI
 import static by.mark.primitivevswrapper.objectmapper.afterbirner.AfterburnerBenchmarkUtils.readValue;
 
 @SuppressWarnings("unused")
-public class PrimitiveVsWrapperDeserializationAfterburnerBenchmarkBySettersConstructor {
+public class PrimitiveVsWrapperDeserializationAfterburnerBenchmarkBySetters {
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
